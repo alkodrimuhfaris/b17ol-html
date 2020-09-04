@@ -6,30 +6,36 @@
         <title>login</title>
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script>
+            function onLogin(e){
+                e.preventDafault();
+                window.location = './home.html'
+            }
+        </script>
     </head>
     <body>
-        <div class="first-container">
-            <div class="brand">
-                <div class="title">
-                    <div class="brand-icon"><img class="icon-img" src="./assets/images/icon-belanja.png"></span> <div class="brand-text">Blanja</span>
+        <div class="container">
+            <div class="header">
+                <img class="icon-img" src="./assets/images/icon.svg">
+                <div class="message">Pelase log in with your account</div>
+            </div>
+            <div class="switch">
+                <button class="btn first">Customer</button><button class="btn second">Seller</button>
+            </div>
+            <form method="POST" onsubmit="onLogin(event)" class="auth" action="">
+                <div class="input-wrapper">
+                    <input type="text" name="username" id="username" placeholder="Username" required>
                 </div>
-            </div>
-            <div class="heading">
-                <span class="please">Pelase log in with your account</span>
-            </div>
-            <div class="select-acc">
-                <a href="#customer"><div class="select" id="customer">Customer</div></a><a href="#seller"><div class="select" id="seller">Seller</div></a>
-            </div>
-            <div class="form-container">
-                <input type="text" name="username" id="username" placeholder="username" required>
-                <input type="password" name="password" id="password" placeholder="password" required>
-                <p class="forgot-pass">
+                <div class="input-wrapper">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="forgot-pass">
                     <a href="#">Forgot password?</a>
-                </p>
-                <a class="submit" href="">PRIMARY</a>
-                <div class="already-text">
-                    <span class="asking-text">Don't have Blanja account? </span><a href="signup.html">Register</a>
-                </div   >
+                </div>
+                <button onclick="window.location='./home.html'" class="btn" href="">PRIMARY</button>
+            </form>
+            <div class="register-link">
+                <span class="asking-text">Don't have Blanja account? </span><a href="signup.html">Register</a>
             </div>
         </div>
         
