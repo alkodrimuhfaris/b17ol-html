@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bag</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="./assets/images/icon.svg" alt="logo">
+        </div>
+        <div class="search-wrapper">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Search">
+                <img src="./assets/images/search-glyph.svg" alt="Search">
+            </div>
+            <button class="filter">
+                <img src="./assets/images/filter.svg" alt="">
+            </button>
+        </div>
+        <div class="nav">
+            <div class="cart">
+                <a href="#cart">
+                    <img src="./assets/images/shopping-cart.svg" alt="cart">
+                </a>
+            </div>
+            <a href="#">
+                <div class="btn first">Login</div>
+            </a>
+            <a href="#">
+                <div class="btn second">Signup</div>
+            </a>
+        </div>
+    </nav>
+
+    <div class="home-container">
+        <div class="heading">
+            <h1>My Bag</h1>
+        </div>
+        <div class="items-wrapper flexed">
+            <div class="left-cards">
+                <div class="select-wrapper center flexed">
+                    <div class="left-align center flexed">
+                        <div class="checkboxes">
+                            <label class="checkbox-container">
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="select-all">
+                            Select all items <span class="number-selected">(2 items selected)</span>
+                        </div>
+                    </div>
+                    <div class="delete-button">
+                        <button class="btn-del">Delete</button>
+                    </div>
+                </div>
+
+
+                <div class="item-wrapper center flexed">
+                    <div class="checkboxes">
+                        <label class="checkbox-container">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    <div class="item center flexed">
+                        <div class="item-picture">
+                            <img src="assets/images/jas.png" alt="">
+                        </div>
+                        <div class="item-information">
+                            <div class="item-name">Men's formal suit - Black</div>
+                            <div class="store-name">Zalora cloth</div>
+                        </div>
+                    </div>
+                    <div class="item-add center flexed">
+                        <div class="item-button">
+                            <button class="btn remove">&minus;</button>
+                        </div>
+                        <div class="count-box">
+                            <span class="item-count">1</span>
+                        </div>
+                        <div class="item-button">
+                            <button class="btn add">+</button>
+                        </div>
+                    </div>
+                    <div class="item-price">$ 20.0</div>
+                </div>
+                <div class="item-wrapper center flexed">
+                    <div class="checkboxes">
+                        <label class="checkbox-container">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item center flexed">
+                        <div class="item-picture">
+                            <img src="assets/images/jaket.png" alt="">
+                        </div>
+                        <div class="item-information">
+                            <div class="item-name">Men's jacket jeans</div>
+                            <div class="store-name">Zalora cloth</div>
+                        </div>
+                    </div>
+                    <div class="item-add center flexed">
+                        <div class="item-button">
+                            <button class="btn remove">&minus;</button>
+                        </div>
+                        <div class="count-box">
+                            <span class="item-count">1</span>
+                        </div>
+                        <div class="item-button">
+                            <button class="btn add">+</button>
+                        </div>
+                    </div>
+                    <div class="item-price">$ 20.0</div>
+                </div>
+            </div>
+            
+            <div class="item-summary">
+                <div class="title">Shopping summary</div>
+                <div class="total center flexed">
+                    <div class="text">Total price</div>
+                    <div class="price">$ 40.0</div>
+                </div>
+                <div class="buy-button">
+                    <button class="btn buy">Buy</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
